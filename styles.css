@@ -2,7 +2,7 @@ body {
     background-color: #2A1E36;
 }
 
-p, h1, h2, a, ul{
+p, h1, h2,h3, a, ul{
     color: white;
 }
 
@@ -18,4 +18,8 @@ p, h1, h2, a, ul{
     padding: 14px 20px;
     text-decoration: none;
     display: inline-block;
+}
+
+.img-worldcloud{
+    width: 300px;
 }
