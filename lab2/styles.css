@@ -1,0 +1,75 @@
+body {
+    background-color: #2A1E36;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+p, h1, h2, h3, a, ul {
+    color: white;
+}
+
+
+.topnav {
+    background-color: #4B3A5F; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.topnav a {
+    color: white; 
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #6D5A8C; 
+}
+
+.img-worldcloud {
+    width: 300px;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+th, td {
+    border: 1px solid #333; 
+    padding: 10px; 
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; 
+    color: #333; 
+}
+
+td {
+    background-color: #f2f2f2; 
+    color: #333; 
+}
+
+td a {
+    color: #333;
+}
+
+footer {
+    background-color: #4B3A5F;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
