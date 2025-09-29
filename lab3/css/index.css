@@ -1,0 +1,36 @@
+/* Estilos específicos da página inicial */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

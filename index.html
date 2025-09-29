@@ -8,38 +8,75 @@
 </head>
 <body>
 
-<header>
-            <nav>
-                <ul>
-                    <li><a href="lab1/index.html">Lab1</a></li>
-                    <li><a href="lab2/index.html">Lab2</a></li>
-                </ul>
-            </nav>
-    <h1>Primeira Página Web!</h1>
-</header>
+    <!-- Menu principal fixo no topo -->
+    <header>
+        <nav class="topnav">
+            <ul>
+                <li><a href="#hero-image">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#disciplina">Interfaces Web</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <p>Eis a minha primeira página Web!</p>
-    <p>
-        Na Unidade Curricular de 
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
-            Desenvolvimento de Interfaces Web
+    <main>
+        <!-- HERO IMAGE -->
+        <section id="hero-image">
+            <div class="hero-text">
+                <p>Tough times never last, only tough people last!</p>
+                <a href="#projetos" class="botao">Projetos</a>
+            </div>
+        </section>
+
+<!-- PROJETOS -->
+<section id="projetos">
+    <h2>Projetos / Labs</h2>
+    <p>Alguns exercícios desenvolvidos ao longo da UC.</p>
+    <div class="cards">
+        <a class="card" href="lab1/index.html">
+            <h3>Lab 1</h3>
+            <p>Estrutura base e semântica</p>
         </a>
-        abordaremos as seguintes tecnologias Web &#127760;:
-    </p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-    </ul>
-    <p>Iremos criar soluções criativas!</p>
-    <img src="images/image.svg" alt="Desenvolvimento de Interfaces Web" class="img-worldcloud">
-</main>
+        <a class="card" href="lab2/index.html">
+            <h3>Lab 2</h3>
+            <p>Estilos e layout responsivo</p>
+        </a>
+        <a class="card" href="lab3/index.html">
+            <h3>Lab 3</h3>
+            <p>Flex & Grid</p>
+        </a>
+    </div>
+</section>
 
-<footer>
-    <p>Universidade Lusófona © 2025</p>
-</footer>
+
+<!-- DISCIPLINA -->
+<section id="disciplina">
+    <h2>Disciplina: Desenvolvimento de Interfaces Web</h2>
+    <div class="disciplina-container">
+        <div class="disciplina-texto">
+            <p>Na Unidade Curricular de 
+                <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
+                    Desenvolvimento de Interfaces Web
+                </a>
+                abordaremos as seguintes tecnologias Web 🌐:
+            </p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React e Next.js</li>
+            </ul>
+            <p>Iremos criar soluções criativas!</p>
+        </div>
+        <div class="disciplina-imagem">
+            <img src="images/image.svg" alt="Desenvolvimento de Interfaces Web" class="img-worldcloud">
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>Universidade Lusófona © 2025</p>
+    </footer>
 
 </body>
 </html>

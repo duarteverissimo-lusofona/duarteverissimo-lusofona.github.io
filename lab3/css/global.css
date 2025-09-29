@@ -1,0 +1,110 @@
+/* Estilos globais para todas as páginas */
+body {
+  background-color: #2a1e36;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+  color: white;
+}
+
+h1 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer comum */
+footer {
+  background-color: #4b3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+/* Navegação principal */
+.topnav {
+  background: linear-gradient(90deg, #4b3a5f, #6d5a8c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: relative;
+  z-index: 1000;
+}
+
+.topnav h1 {
+  margin: 0;
+  font-size: 28px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.topnav h1:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  margin-left: auto;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.topnav nav {
+  display: flex;
+  gap: 20px;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.topnav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+  }
+  .topnav nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background: #4b3a5f;
+    padding: 15px;
+    border-radius: 6px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .topnav:hover nav {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
