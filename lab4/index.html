@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interativa</title>
+    <link rel="stylesheet" href="/lab4/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">Clica em mim e descobre o que aumenta!</h1>
+    </header>
+
+    <main class="container"> 
+        <section>
+            <div id="mouse-position">Posição do rato: (0, 0)</div>
+        </section>
+
+        <section>
+            <h2>Passa o rato por cima de uma das cores!</h2>
+            <div class="card-container">
+                <div class="card red" data-color="#e74c3c"></div>
+                <div class="card blue" data-color="#3498db"></div>
+                <div class="card green" data-color="#2ecc71"></div>
+            </div>
+        </section>
+
+        <section>
+            <img id="dark-img" src="images/image-naoclicar.webp" alt="Imagem interativa">
+        </section>
+    </main>
+
+    <footer>
+        <img id="final-image" src="images/final.jpg" alt="Imagem final surpresa">
+        <p><span id="counter">2025</span> Duarte Veríssimo — a22303434</p>
+    </footer>
+
+    <script src="/lab4/scripts/main.js"></script>
+</body>
+</html>
