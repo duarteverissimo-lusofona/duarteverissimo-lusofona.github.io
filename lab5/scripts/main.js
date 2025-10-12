@@ -12,8 +12,9 @@ const corTexto2 = document.querySelector(".cortxt2");
 const nomeInput = document.querySelector('#nome');
 const idadeInput = document.querySelector('#idade');
 const msg = document.querySelector('.msgForm');
+
 let counter2 = 0;
-let counter = localStorage.getItem('.counterAuto');
+let counter = localStorage.getItem('counter') || 33;
 
 const cores = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lavender", "lightcoral"];
 let indice = 0;
@@ -87,8 +88,8 @@ document.querySelector('#btnAdicionar').addEventListener('click', count);
 
 document.querySelector('#counter').textContent = localStorage.getItem('counter');
 
-function count() {
+function count2() {
     
   document.querySelector('.counterAuto').textContent = counter2++;
 }
-setInterval(count, 1000);
+setInterval(count2, 1000);
