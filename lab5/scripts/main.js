@@ -8,7 +8,12 @@ const corInput = document.querySelector('.inputcor');
 const corEmIngles = document.querySelector('.corEng');
 const botaoSubmeter = document.querySelector('.btnSubmeter');
 const counterElement = document.querySelector('#counter');
-let counter = 0;
+const corTexto2 = document.querySelector(".cortxt2");
+const nomeInput = document.querySelector('#nome');
+const idadeInput = document.querySelector('#idade');
+const msg = document.querySelector('.msgForm');
+let counter2 = 0;
+let counter = localStorage.getItem('.counterAuto');
 
 const cores = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lavender", "lightcoral"];
 let indice = 0;
@@ -47,10 +52,43 @@ botaoSubmeter.addEventListener("click", () => {
   corDeFundo.style.backgroundColor = corDigitada;
 });
 
-function count() {
-    counter++;
-    counterElement.textContent = 33 + counter;
+  document.querySelectorAll("button.color").forEach((button) => {
+    button.addEventListener("click", () => {
+      corTexto2.style.color = button.dataset.color;
+    });
+  });
+
+
+document.querySelector('select').onchange = function() {
+    document.querySelector('body').style.backgroundColor = this.value;
 }
 
+document.querySelector('form').onsubmit = (e) => {
+  e.preventDefault();
+
+const nome = nomeInput.value;
+const idade = idadeInput.value;
+
+  msg.textContent = `Olá, o ${nome} tem ${idade}!`;
+};
+
+
+if(!localStorage.getItem('counter')){
+  localStorage.setItem('counter', 0);
+}
+
+function count() {
+  
+    counter++;
+    document.querySelector('#counter').textContent = counter;
+    localStorage.setItem('counter', counter);
+}
 document.querySelector('#btnAdicionar').addEventListener('click', count);
 
+document.querySelector('#counter').textContent = localStorage.getItem('counter');
+
+function count() {
+    
+  document.querySelector('.counterAuto').textContent = counter2++;
+}
+setInterval(count, 1000);
