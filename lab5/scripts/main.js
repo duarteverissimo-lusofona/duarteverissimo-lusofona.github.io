@@ -75,7 +75,7 @@ const idade = idadeInput.value;
 
 
 if(!localStorage.getItem('counter')){
-  localStorage.setItem('counter', 0);
+  localStorage.setItem('counter', 33);
 }
 
 function count() {
