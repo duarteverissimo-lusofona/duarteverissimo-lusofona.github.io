@@ -75,6 +75,10 @@ article {
   align-items: center;
 }
 
+article p {
+  color: black;
+}
+
 #zona-produtos{
   margin: 50px 0px 50px 0px;
 }
