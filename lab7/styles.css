@@ -1,0 +1,303 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border: solid 1px lightgray;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: ghostwhite;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2, p {
+  color: white;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 50px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article p {
+  color: black;
+}
+
+#zona-produtos {
+  margin: 50px 0;
+}
+
+#cesto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 50px;
+}
+
+#cesto article {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+#zona-cesto {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+#filtros-section {
+  display: flex;
+  background-color: ghostwhite;
+  margin: 100px 100px 50px 100px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  border-radius: 10px;
+  border: solid 1px lightgray;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+footer p {
+  color: black;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+#area-compra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.campo-compra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* TABLET (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 80px;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  ul {
+    gap: 20px;
+  }
+
+  #produtos {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  #cesto {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  #zona-produtos {
+    margin: 30px 0;
+  }
+
+  #zona-cesto {
+    padding: 30px 20px;
+  }
+
+  #filtros-section {
+    margin: 50px 30px 30px 30px;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  article {
+    padding: 15px;
+  }
+}
+
+/* MOBILE (até 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  header {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  ul {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  #produtos {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  #cesto {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  #zona-produtos {
+    margin: 20px 0;
+  }
+
+  #zona-cesto {
+    padding: 20px 15px;
+  }
+
+  #filtros-section {
+    margin: 30px 15px 20px 15px;
+    padding: 15px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  article {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .campo-compra {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  footer {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* MOBILE PEQUENO (até 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 120px; /* Mais espaço se o header quebrar em múltiplas linhas */
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  ul {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  #filtros-section {
+    margin: 20px 10px;
+    padding: 10px;
+  }
+
+  #produtos,
+  #cesto {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .logo img {
+    width: 35px;
+  }
+}

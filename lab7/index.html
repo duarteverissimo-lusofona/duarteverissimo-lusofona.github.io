@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Lab7</title>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="deisi-ball.png" alt="" />
+  </div>
+  <h1>Loja DEISI</h1>
+  <nav>
+    <ul>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#cesto">Cesto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="filtros-section">
+    <div class="filtro-grupo">
+      <label for="filtro-categoria">Filtrar</label>
+      <select id="filtro-categoria">
+        <option value="">Todas as categorias</option>
+      </select>
+    </div>
+
+    <div class="filtro-grupo">
+      <label for="ordenar-preco">Ordenar</label>
+      <select id="ordenar-preco">
+        <option value="">Ordenar pelo preço</option>
+        <option value="crescente">Preço: Crescente</option>
+        <option value="decrescente">Preço: Decrescente</option>
+      </select>
+    </div>
+
+    <div class="filtro-grupo">
+      <label for="pesquisar-produto">Procurar</label>
+      <input
+              type="text"
+              id="pesquisar-produto"
+              placeholder="pesquise por produto"
+      />
+    </div>
+  </section>
+
+  <section id="zona-produtos">
+    <section id="produtos"></section>
+  </section>
+
+  <section id="zona-cesto">
+    <h2>Produtos Selecionados</h2>
+    <section id="cesto"></section>
+    <p class="custo-final">Preço Total: </p>
+
+    <div id="area-compra">
+      <div class="campo-compra">
+        <label for="checkbox-estudante">
+          <input type="checkbox" id="checkbox-estudante" />
+          És estudante do DEISI?
+        </label>
+        <div>
+          <label for="input-cupao">Cupão de desconto:</label>
+          <input type="text" id="input-cupao" placeholder="" />
+        </div>
+
+
+        <button id="botao-comprar">Comprar</button>
+      </div>
+
+      <div id="resultado-compra"></div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <p>Desenvolvido por Duarte Veríssimo - a22303434</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
