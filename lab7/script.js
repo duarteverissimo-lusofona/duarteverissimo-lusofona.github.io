@@ -117,9 +117,7 @@ function atualizaCesto() {
       cestoContainer.appendChild(criaProdutoCesto(produto, index));
       precoTotal += produto.price;
     });
-  } else {
-    cestoContainer.innerHTML = "<p>O cesto está vazio.</p>";
-  }
+  } 
 
   document.querySelector('.custo-final').innerHTML = `<h3>Preço Total: ${precoTotal.toFixed(2)} €</h3>`;
   document.querySelector('#resultado-compra').innerHTML = "";
@@ -147,7 +145,7 @@ async function processarCompra() {
   const resultadoCompraDiv = document.querySelector('#resultado-compra');
 
   if (produtosNoCesto.length === 0) {
-    resultadoCompraDiv.innerHTML = `<p class="erro">O cesto está vazio.</p>`;
+    
     return;
   }
 
